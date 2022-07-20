@@ -1,0 +1,24 @@
+{
+  "name": "databae",
+  "version": "1.0.0",
+  "description": "a dating app for single developers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bprendaj/databae.git"
+  },
+  "author": "Adry Quezada, Brikena Prendaj, Kate Bonner, Katrina Pei Wen Shih",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bprendaj/databae/issues"
+  },
+  "homepage": "https://github.com/Bprendaj/databae#readme",
+  "dependencies": {
+    "figlet": "^1.5.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
