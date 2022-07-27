@@ -11,7 +11,8 @@ router.get('/', (req,res) => {
 // RENDER LOGIN PAGE
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
-      res.render('dashboard', {
+      res.render('chatBody', {
+        layout: 'chat',
         loggedIn: req.session.loggedIn
     });
       return;

@@ -9,7 +9,6 @@ const loginFormHandler = async (event) => {
     =================
     login.js data:
       ${email}
-      ${password}
     =================
     `)
       const response = await fetch('/api/users/login', {

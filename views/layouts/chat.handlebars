@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
   <head>
     <!-- <link rel="stylesheet" href="/public/stylesheet/style.css"> -->
     <title>Committing Messages</title>  
@@ -17,34 +16,5 @@
       </style>  
   </head>
   <body>
-    <ul id="messages"></ul>
-    <form id="form" action="">
-      <input id="input" autocomplete="off" /><button>Commit Your Message</button>
-    </form>
-    <script src="/socket.io/socket.io.js"></script>
-    <!-- <script src="/public/js/chat.js"></script> -->
-    <script>
-        const socket = io();
-
-const messages = document.getElementById('messages');
-const form = document.getElementById('form');
-const input = document.getElementById('input');
- 
-//message submit
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  if (input.value) {
-    socket.emit('chat message', input.value); //emit message to server
-    input.value = '';
-  }
-});
-
-socket.on('chat message', function(msg) {
-  var item = document.createElement('li');
-  item.textContent = msg;
-  messages.appendChild(item);
-  window.scrollTo(0, document.body.scrollHeight);
-});
-    </script>
+    {{{ body }}}
   </body>
-</html>
