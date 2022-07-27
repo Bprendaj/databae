@@ -4,17 +4,18 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 
 const http = require('http');
-const socketio = require("socket.io");
 
 
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
+
 const app = express();
 const server = http.createServer(app);
-const { Server } = require("socket.io");
+//const { Server } = require("socket.io");
+const socketio = require("socket.io");
 
-//const io = socketio(server);
-const io = new Server(server);
+const io = socketio(server);
+//const io = new Server(server);
 
 const PORT = process.env.PORT || 3001;
 
@@ -22,7 +23,7 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'super secret secret',
+  secret: 'i am a baddie',
   cookie: {
     expires: 1000000
   },
@@ -58,10 +59,14 @@ io.on('connection', (socket) => {
   });
 });
 
+
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  const serverInstance = app.listen(PORT, () => {
+    console.log('Now listening')
+  });
+  io.attach(serverInstance);
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
-});
+// server.listen(3000, () => {
+//   console.log('listening on *:3000');
+// });
