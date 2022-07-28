@@ -1,1 +1,5 @@
-<h1>welcome to the dashboard</h1>
+{{#each users as |user|}}
+    {{#if loggedIn}}
+        <h1> {{ username }} </h1>
+    {{/if}}
+{{/each}}
