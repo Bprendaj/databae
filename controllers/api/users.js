@@ -39,11 +39,14 @@ try {
     const userData = await User.create({
         username: req.body.username,
         email: req.body.email,
-        password: req.body.password,
-        gender: req.body.gender,
-        preference: req.body.preference,
-        language: req.body.language
+        password: req.body.password
+        // gender: req.body.gender,
+        // preference: req.body.preference,
+        // language: req.body.language
     })
+    console.log("==================");
+    console.log(userData);
+    console.log("==================")
 
     req.session.save(()=> {
       req.session.user_id = userData.id;

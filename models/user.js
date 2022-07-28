@@ -37,19 +37,19 @@ User.init(
       validate: {
         len: [4]
       }
-    },
-    gender: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    preference: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    language: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    }
+    // gender: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // preference: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // language: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
   },
 
   {
