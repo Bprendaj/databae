@@ -34,12 +34,15 @@ router.get('/:id', async (req, res) => {
 
 // POST USER DATA TO CREATE A USER
 router.post('/', async (req, res) => {
-// expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+// expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234', gender: 'male', preference: 'female'}
 try {
     const userData = await User.create({
         username: req.body.username,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        gender: req.body.gender,
+        preference: req.body.preference,
+        language: req.body.language
     })
 
     req.session.save(()=> {
@@ -66,7 +69,7 @@ try {
         }
   });
   if(!userData){
-    res.status(400).json({message:'no user with this email address foun'})
+    res.status(400).json({message:'no user with this email address found'})
     return;
   }
 

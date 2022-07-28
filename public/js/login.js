@@ -31,18 +31,22 @@ const loginFormHandler = async (event) => {
     const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
+    const gender = document.querySelector('#genderChoice').value.trim();
+    const preference = document.querySelector('#genderPreference').value.trim();
+    const language = document.querySelector('#languageChoice').value.trim();
   
-    if (username && email && password) {
+    if (username && email && password && gender && preference && language) {
       const response = await fetch('/api/users', {
         method: 'POST',
-        body: JSON.stringify({ username, email, password }),
+        body: JSON.stringify({ username, email, password,gender, preference, language }),
         headers: { 'Content-Type': 'application/json' },
       });
-      
+
       if (response.ok) {
         document.location.replace('/');
       } else {
         alert('Failed to sign up.');
+      console.log(preference());
       }
     }
   };

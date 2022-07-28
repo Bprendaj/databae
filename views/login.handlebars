@@ -27,9 +27,29 @@
         <input type="password" id="password-signup" />
     </div>
     <div>
-        <label for="gender-signup">gender:</label>
-        <input type="gender" id="gender-signup" />
-    </div>    
+        <a> gender: </a>  
+        <select id = "genderChoice" onchange = "gender()" >  
+        <option value ="male">male</option>  
+        <option value ="female">female</option> 
+        </select>
+    </div>  
+    <div>
+        <a> gender preference: </a>  
+        <select id = "genderPreference" onchange = "preference()" >  
+        <option value ="male">male</option>  
+        <option value ="female">female</option> 
+        </select>
+    </div> 
+    <div>
+        <a> select you favorite coding language: </a>  
+        <select id = "languageChoice" onchange = "language()" >  
+        <option> ---choose language--- </option>  
+        <option> Javascript </option>  
+        <option> Python </option>  
+        <option> C++ </option>  
+        <option> Java </option>
+        </select>  
+    </div>
     <div>
         <button type="submit">signup</button>
     </div>
