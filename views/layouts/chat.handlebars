@@ -1,9 +1,15 @@
 
   <head>
     <!-- <link rel="stylesheet" href="/public/stylesheet/style.css"> -->
-    <title>Committing Messages</title>  
+    <title>chat</title> 
     <style>
-        body { background-color:rgb(220, 210, 246); padding-bottom: 3rem; font-family: avenir, sans-serif; }
+      body { 
+          background-color:rgb(224, 213, 252);
+; padding-bottom: 3rem;
+       }
+    </style> 
+    {{!-- <style>
+        body { background-color:rgb(208, 167, 255); padding-bottom: 3rem; font-family: avenir, sans-serif; }
   
         #form { background: rgb(180, 158, 235); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
         #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
@@ -13,8 +19,27 @@
         #messages { list-style-type: none; margin: 0; padding: 0; }
         #messages > li { padding: 0.5rem 1rem; }
         #messages > li:nth-child(odd) { background: #efefef; }
-      </style>  
+      </style>   --}}
+      <link rel="stylesheet" type="text/css" href="/stylesheet/style.css">
   </head>
   <body>
+    <header>
+      <h1>
+        <a href="/">databae</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+        <a class="blog-nav" href="/">home</a>
+        <a class="dashboard-nav" href="/dashboard">dashboard</a>
+        <a class="dashboard-nav" href="/chat">chat</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+          <a class="login-heading" href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
     {{{ body }}}
+      {{#if loggedIn}}
+        <script src="js/logout.js"></script>
+      {{/if}}
   </body>

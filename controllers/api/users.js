@@ -65,7 +65,6 @@ try {
 router.post('/login', async (req, res) => {
 // expects {email: 'lernantino@gmail.com', password: 'password1234'}
 try {
-  console.log('trying to login...');
   const userData = await User.findOne({
       where: {
           email: req.body.email
