@@ -9,6 +9,9 @@
 
 ![chat page](./IMAGES/CHAT.png)
 
+LINK TO DEPLOYED APPLICATION:
+https://warm-castle-61727.herokuapp.com/
+
 ## Table of Contents 
 
 * [Installation](#installation)
