@@ -16,11 +16,12 @@
       </h1>
       <nav>
         {{#if loggedIn}}
-        <button class="blog-nav" href="/">home</button>
-        <button class="dashboard-nav" href="/dashboard">dashboard</button>
-        <button class="dashboard-nav" href="/chat">chat</button>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a class="blog-nav" href="/">home</a>
+        <a class="dashboard-nav" href="/dashboard">dashboard</a>
+        <a class="dashboard-nav" href="/chat">chat</a>
+        <a id="logout" class="btn-no-style">logout</a>
         {{else}}
+          <h2>are you ready to commit -m ?</h2>
           <button class="login-heading" href="/login">login</button>
         {{/if}}
       </nav>

@@ -29,7 +29,13 @@ h2 {
     color: var(--text);
 }
 
-button {
+
+
+button,
+.blog-nav,
+.dashboard-nav,
+#logout,
+.login-heading {
     background: var(--text);
     border: none;
     border-radius: 10px;
