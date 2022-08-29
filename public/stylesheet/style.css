@@ -66,12 +66,14 @@ input {
     background-color: var(--text);
     color: white;
     width: fit-content;
-    
+    padding: 0.5rem 1rem; 
+    border-radius: 15px;
+    margin: 4px;
 }
 
 #messages li {
-    color: var(--text);
-    background-color: white;
+    color: var(--hover);
+    background-color: #9e2f75;
     padding: 0.5rem 1rem; 
     border-radius: 15px;
     width: fit-content;
