@@ -11,6 +11,16 @@
 <body>
   <div class="wrapper">
     <header>
+      <nav>
+        {{#if loggedIn}}
+        {{!-- <a class="blog-nav" href="/">home</a>
+        <a class="dashboard-nav" href="/dashboard">dashboard</a>
+        <a class="dashboard-nav" href="/chat">chat</a> --}}
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+          <a class="login-heading" href="/login">login</a>
+        {{/if}}
+      </nav>
       <h1 class='logo'>
         <a href="/">{databae}</a>
       </h1>
@@ -19,16 +29,6 @@
       {{else}}
       <h4> are you ready to -m commit ? </h4>
       {{/if}}
-      <nav>
-        {{#if loggedIn}}
-        <a class="blog-nav" href="/">home</a>
-        <a class="dashboard-nav" href="/dashboard">dashboard</a>
-        <a class="dashboard-nav" href="/chat">chat</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-          <a class="login-heading" href="/login">login</a>
-        {{/if}}
-      </nav>
     </header>
     <main>
       {{{ body }}}
