@@ -18,9 +18,10 @@ a:hover {
   }
 
 h1 {
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
+    margin: 10%;
 }
 
 button {
