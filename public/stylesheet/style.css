@@ -173,7 +173,7 @@ p {
 
 .login-form {
     border-radius: 15px;
-    background-color: var(--dark);
+    background-color: #9e2f75;
     padding: 30px;
     margin: 5px;
     align-items: center;
@@ -184,7 +184,7 @@ p {
 
 .signup-form {
     border-radius: 15px;
-    background-color: var(--dark);
+    background-color: #9e2f75;
     padding: 30px;
     margin: 5px;
     align-items: center;
