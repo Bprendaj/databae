@@ -45,6 +45,7 @@ button {
     border-radius: 15px;
     background-color: var(--text);
     color: white;
+    outline:none;
 }
 
 button:hover {
@@ -53,7 +54,7 @@ button:hover {
 
 input {
     border-radius: 15px;
-    background-color: var(--light-grey);
+    background-color: var(--hover);
     border-style: none;
     box-sizing: border-box;
     padding: 3px;
@@ -106,7 +107,7 @@ nav {
     width: 100%;
     border-radius: 12px;
     border: 1px solid var(--text);
-    background-color: transparent;
+    background-color: var(--dark);
 }
 
 .initial-content-input {
@@ -114,7 +115,7 @@ nav {
     width: 60%;
     border-radius: 12px;
     border: 1px solid var(--text);
-    background-color: transparent;
+    background-color: var(--dark);
 }
 
 .post,
