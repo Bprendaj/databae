@@ -173,13 +173,13 @@ p {
 
 .login-form {
     border-radius: 15px;
-    background-color: var(--light);
+    background-color: var(--dark);
     padding: 30px;
     margin: 5px;
     align-items: center;
     color: var(--text);
-    box-shadow: 0 2px 3px 0 rgb(60 64 67 / 30%),
-    0 6px 10px 4px rgb(60 64 67 / 15%);
+    box-shadow: 0 2px 3px 0 rgba(67, 60, 62, 0.527),
+    0 6px 10px 4px rgba(67, 60, 62, 0.438);
 }
 
 .signup-form {
@@ -189,8 +189,8 @@ p {
     margin: 5px;
     align-items: center;
     color: var(--text);
-    box-shadow: 0 2px 3px 0 rgb(60 64 67 / 30%),
-    0 6px 10px 4px rgb(60 64 67 / 15%);
+    box-shadow: 0 2px 3px 0 rgba(67, 60, 62, 0.527),
+    0 6px 10px 4px rgba(67, 60, 62, 0.438);
 }
 
 #form {
