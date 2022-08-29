@@ -75,6 +75,12 @@ nav {
     padding: 0 10px;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
 .login-heading {
     text-align: right;
     padding: 10px;
