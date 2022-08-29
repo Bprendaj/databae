@@ -72,7 +72,7 @@ input {
 }
 
 #messages li {
-    color: var(--hover);
+    color: white;
     background-color: #9e2f75;
     padding: 0.5rem 1rem; 
     border-radius: 15px;
@@ -195,7 +195,7 @@ p {
     padding: 30px;
     margin: 5px;
     align-items: center;
-    color: var(--text);
+    color: white;
     box-shadow: 0 2px 3px 0 rgba(67, 60, 62, 0.527),
     0 6px 10px 4px rgba(67, 60, 62, 0.438);
 }
@@ -206,7 +206,7 @@ p {
     padding: 30px;
     margin: 5px;
     align-items: center;
-    color: var(--text);
+    color: white;
     box-shadow: 0 2px 3px 0 rgba(67, 60, 62, 0.527),
     0 6px 10px 4px rgba(67, 60, 62, 0.438);
 }
