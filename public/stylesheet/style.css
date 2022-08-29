@@ -70,7 +70,8 @@ input {
 }
 
 #messages li {
-    color: white;
+    color: var(--text);
+    background-color: white;
     padding: 0.5rem 1rem; 
     border-radius: 15px;
     width: fit-content;
