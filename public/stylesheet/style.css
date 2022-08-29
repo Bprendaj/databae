@@ -59,6 +59,21 @@ input {
     box-sizing: border-box;
     padding: 3px;
     margin: 3px;
+    color:white;
+}
+
+#messages li:nth-child(odd) {
+    background-color: var(--text);
+    color: white;
+    width: fit-content;
+    
+}
+
+#messages li {
+    color: white;
+    padding: 0.5rem 1rem; 
+    border-radius: 15px;
+    width: fit-content;
 }
 
 nav {
@@ -211,6 +226,7 @@ p {
     flex-grow: 1; 
     border-radius: 2rem; 
     margin: 0.25rem; 
+    color: white;
 }
 
 #input:focus {
@@ -223,12 +239,6 @@ p {
     padding: 0; 
 }
 
-#messages li { 
-    padding: 0.5rem 1rem; 
-    border-radius: 15px;
-}
 
-#messages li:nth-child(odd) { 
-    background: #efefef; 
-}
+
 
