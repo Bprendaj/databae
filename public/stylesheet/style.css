@@ -31,11 +31,7 @@ h2 {
 
 
 
-button,
-.blog-nav,
-.dashboard-nav,
-#logout,
-.login-heading {
+button {
     background: var(--text);
     border: none;
     border-radius: 10px;
