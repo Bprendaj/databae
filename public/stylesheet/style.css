@@ -2,8 +2,11 @@
     font-family: avenir, sans-serif;
     --light-grey:rgb(235, 235, 235);
     --light: rgb(255, 255, 255);
-    --text: rgb(117, 58, 255);
-    --hover: rgb(168, 131, 255);
+    /* --text: #753aff; */
+    --text: #D72483;
+    /* --hover: rgb(168, 131, 255); */
+    --hover: #FD3E81;
+    --dark: #792359;
     background-color: var(--dark);
   
 }
