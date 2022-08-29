@@ -45,7 +45,7 @@ button {
     border-radius: 15px;
     background-color: var(--text);
     color: white;
-    outline:none;
+    border: none;
 }
 
 button:hover {
@@ -184,7 +184,7 @@ p {
 
 .signup-form {
     border-radius: 15px;
-    background-color: var(--light);
+    background-color: var(--dark);
     padding: 30px;
     margin: 5px;
     align-items: center;
