@@ -14,6 +14,11 @@
       <h1 class='logo'>
         <a href="/">{databae}</a>
       </h1>
+      {{#if loggedIn}}
+      <h4> send nodes :) </h4>
+      {{else}}
+      <h4> are you ready to -m commit ? </h4>
+      {{/if}}
       <nav>
         {{#if loggedIn}}
         <a class="blog-nav" href="/">home</a>
